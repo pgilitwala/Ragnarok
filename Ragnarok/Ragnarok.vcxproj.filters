@@ -34,6 +34,7 @@
     <ClInclude Include="src\Ragnarok\Log.h">
       <Filter>Ragnarok</Filter>
     </ClInclude>
+    <ClInclude Include="src\rgrpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ragnarok\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Ragnarok\Log.cpp">
       <Filter>Ragnarok</Filter>
     </ClCompile>
+    <ClCompile Include="src\rgrpch.cpp" />
   </ItemGroup>
 </Project>

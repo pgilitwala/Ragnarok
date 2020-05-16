@@ -18,6 +18,9 @@ workspace "Ragnarok"
          targetdir ("bin/" .. outputdir .. "/%{prj.name}")
          objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+         pchheader "rgrpch.h"
+         pchsource "Ragnarok/src/rgrpch.cpp"
+
          files
          {
           "%{prj.name}/src/**.h",
