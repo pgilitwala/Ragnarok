@@ -10,6 +10,12 @@ workspace "Ragnarok"
 
      outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+     -- include directories relative to root folder (solutions dir)
+     IncludeDir = {}
+     IncludeDir["GLFW"] = "Ragnarok/vendor/GLFW/include"
+
+     include "Ragnarok/vendor/GLFW"
+
      project "Ragnarok"
          location "Ragnarok"
          kind "SharedLib"
@@ -30,8 +36,15 @@ workspace "Ragnarok"
          includedirs
          {
           "%{prj.name}/vendor/spdlog/include",
-          "%{prj.name}/src/"
+          "%{prj.name}/src/",
+          "%{IncludeDir.GLFW}"
          }
+
+         links
+         {
+            "GLFW",
+            "opengl32.lib"
+		 }
 
          filter "system:windows"
               cppdialect "C++17"

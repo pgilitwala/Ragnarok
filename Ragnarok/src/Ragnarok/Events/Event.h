@@ -1,7 +1,8 @@
 #pragma once
 
 #include "Ragnarok/Core.h"
-
+#include <string>
+#include <functional>
 
 namespace Ragnarok {
 
