@@ -4,6 +4,9 @@
     <Filter Include="Ragnarok">
       <UniqueIdentifier>{DA83DB4B-C650-3657-EF69-24FFDB956BE5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ragnarok\Events">
+      <UniqueIdentifier>{7E16EFB2-EAA1-5C77-F3B2-DF6B5FBDB877}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Ragnarok.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Ragnarok\EntryPoint.h">
       <Filter>Ragnarok</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ragnarok\Events\ApplicationEvent.h">
+      <Filter>Ragnarok\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ragnarok\Events\Event.h">
+      <Filter>Ragnarok\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ragnarok\Events\KeyEvent.h">
+      <Filter>Ragnarok\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ragnarok\Events\MouseEvent.h">
+      <Filter>Ragnarok\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Ragnarok\Log.h">
       <Filter>Ragnarok</Filter>
