@@ -64,14 +64,17 @@ workspace "Ragnarok"
 
          filter "configurations:Debug"
               defines "RGR_DEBUG"
+              buildoptions "/MDd"
               symbols "On"
 
          filter "configurations:Release"
               defines "RGR_RELEASE"
+              buildoptions "/MD"
               optimize "On"
 
          filter "configurations:Dist"
               defines "RGR_DIST"
+              buildoptions "/MD"
               optimize "On"
 
     project "Sandbox"
@@ -111,12 +114,15 @@ workspace "Ragnarok"
 
          filter "configurations:Debug"
               defines "RGR_DEBUG"
+              buildoptions "/MDd"
               symbols "On"
 
          filter "configurations:Release"
               defines "RGR_RELEASE"
+              buildoptions "/MD"
               optimize "On"
 
          filter "configurations:Dist"
               defines "RGR_DIST"
+              buildoptions "/MDd"
               optimize "On"

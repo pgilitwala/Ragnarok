@@ -40,6 +40,12 @@
     <ClInclude Include="src\Ragnarok\Events\MouseEvent.h">
       <Filter>Ragnarok\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Ragnarok\Layer.h">
+      <Filter>Ragnarok</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ragnarok\LayerStack.h">
+      <Filter>Ragnarok</Filter>
+    </ClInclude>
     <ClInclude Include="src\Ragnarok\Log.h">
       <Filter>Ragnarok</Filter>
     </ClInclude>
@@ -53,6 +59,12 @@
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\Ragnarok\Application.cpp">
+      <Filter>Ragnarok</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ragnarok\Layer.cpp">
+      <Filter>Ragnarok</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ragnarok\LayerStack.cpp">
       <Filter>Ragnarok</Filter>
     </ClCompile>
     <ClCompile Include="src\Ragnarok\Log.cpp">
