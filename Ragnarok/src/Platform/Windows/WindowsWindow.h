@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Ragnarok/Window.h"
+
 #include <GLFW/glfw3.h>
 
 namespace Ragnarok {

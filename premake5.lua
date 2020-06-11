@@ -13,8 +13,10 @@ workspace "Ragnarok"
      -- include directories relative to root folder (solutions dir)
      IncludeDir = {}
      IncludeDir["GLFW"] = "Ragnarok/vendor/GLFW/include"
+     IncludeDir["Glad"] = "Ragnarok/vendor/Glad/include"
 
      include "Ragnarok/vendor/GLFW"
+     include "Ragnarok/vendor/Glad"
 
      project "Ragnarok"
          location "Ragnarok"
@@ -37,12 +39,14 @@ workspace "Ragnarok"
          {
           "%{prj.name}/vendor/spdlog/include",
           "%{prj.name}/src/",
-          "%{IncludeDir.GLFW}"
+          "%{IncludeDir.GLFW}",
+          "%{IncludeDir.Glad}"
          }
 
          links
          {
             "GLFW",
+            "Glad",
             "opengl32.lib"
 		 }
 
@@ -54,7 +58,8 @@ workspace "Ragnarok"
               defines
               {
                "RGR_PLATFORM_WINDOWS",
-               "RGR_BUILD_DLL"
+               "RGR_BUILD_DLL",
+               "GLFW_INCLUDE_NONE"
               }
 
               postbuildcommands
